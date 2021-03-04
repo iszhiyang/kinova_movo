@@ -1,0 +1,14 @@
+#goal definition
+float32[3] pos_r
+float32[3] pos_l
+float32[3] orn_r
+float32[3] orn_l
+float32[6] r_max_force
+float32[6] l_max_force
+float32 time
+---
+#result definition
+bool success
+---
+#feedback
+bool NotImplemented

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="concept_dxy_ljx_4bb"
+               path="Concepts/c_welcome_to_movo_beta.html"/>
+   <appContext helpID="concept_dmq_21n_gcb"
+               path="Concepts/c_movo_user_guide_revision_history.html"/>
+   <appContext helpID="concept_jgg_cqh_qbb" path="Concepts/c_whats_in_box.html"/>
+   <appContext helpID="task_lqc_nqh_qbb" path="Tasks/t_unboxing_movo.html"/>
+   <appContext helpID="concept_cz2_jkd_fcb" path="Concepts/c_main_breaker.html"/>
+   <appContext helpID="task_npl_gth_qbb" path="Tasks/t_charging_movo_battery.html"/>
+   <appContext helpID="concept_ncf_m5h_qbb" path="Concepts/c_support_help.html"/>
+   <appContext helpID="concept_f2r_tlx_4bb" path="Concepts/c_movo_safety.html"/>
+   <appContext helpID="concept_ert_mqx_4bb" path="Concepts/c_intended_use.html"/>
+   <appContext helpID="concept_yxt_vqx_4bb"
+               path="Concepts/c_environmental_operating_conditions.html"/>
+   <appContext helpID="concept_ktb_q5h_qbb" path="Concepts/c_estop.html"/>
+   <appContext helpID="concept_vkq_brx_4bb"
+               path="Concepts/c_avoiding_damage_equipment.html"/>
+   <appContext helpID="concept_itc_2rx_4bb"
+               path="Concepts/c_avoiding_personal_injury.html"/>
+   <appContext helpID="concept_dg2_nkm_sbb"
+               path="Concepts/c_movo_hardware_overview.html"/>
+   <appContext helpID="concept_xhp_fw2_tbb" path="Concepts/c_hmi_panel.html"/>
+   <appContext helpID="untitled8" path="Concepts/c_charging_port.html"/>
+   <appContext helpID="untitled7" path="Concepts/c_led_panel.html"/>
+   <appContext helpID="concept_wgy_m44_ccb" path="Concepts/c_teleop_control.html"/>
+   <appContext helpID="task_olt_kc3_tbb" path="Tasks/t_powering_up_movo.html"/>
+   <appContext helpID="concept_mp3_xcf_bcb" path="Concepts/c_movo_bootup_process.html"/>
+   <appContext helpID="concept_apg_cjf_bcb"
+               path="Concepts/c_movo_upstart_process.html"/>
+   <appContext helpID="task_m4q_nth_qbb" path="Tasks/t_powering_down_movo.html"/>
+   <appContext helpID="concept_xtf_tx1_ccb"
+               path="Concepts/c_movo_shutdown_process.html"/>
+   <appContext helpID="concept_jfr_xhc_gcb"
+               path="Concepts/c_working_jaco_arms_movo.html"/>
+   <appContext helpID="task_llq_1cc_gcb"
+               path="Tasks/t_disconnect_jaco_standard_base.html"/>
+   <appContext helpID="task_pfy_zsh_qbb" path="Tasks/t_kinova_arms_install.html"/>
+   <appContext helpID="task_ow1_wth_qbb" path="Tasks/t_kinova_arms_uninstall.html"/>
+   <appContext helpID="task_hhz_pws_5bb"
+               path="Tasks/t_mount_jaco_externally_base.html"/>
+   <appContext helpID="task_ojm_35h_qbb" path="Tasks/t_packing_movo_transport.html"/>
+</map>

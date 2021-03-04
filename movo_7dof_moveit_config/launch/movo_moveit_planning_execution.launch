@@ -1,0 +1,61 @@
+<launch>
+  <arg name="sim" default="false" />
+  <arg name="debug" default="false" />
+  <!-- By default, we do not start a database (it can be large) -->
+  <arg name="demo" default="false" />
+
+  <!--movo/right_arm_controller/follow_joint_trajectory
+  /robot_description_semantic-->
+  
+  <!-- Launch moveit -->
+  
+  <include file="$(find movo_7dof_moveit_config)/launch/move_group.launch">
+    <arg name="debug" default="$(arg debug)" />
+  </include>
+
+
+  <!--
+  <remap from="/get_planning_scene" to="/robot1/get_planning_scene" /> 
+  <remap from="/joint_states" to="/robot1/joint_states" /> 
+
+-->
+
+
+<!--
+  <group ns='robot1'>
+
+    <include file="$(find movo_7dof_moveit_config)/launch/move_group.launch">
+      <arg name="debug" default="$(arg debug)" />
+    </include>
+
+      <param name="robot_description" command="$(find xacro)/xacro.py $(find movo_description)/urdf/movo.urdf.xacro" />
+        
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <rosparam name="robot_description" value='robot_description' />
+        <param name="use_gui" value="false"/> 
+        <rosparam param="source_list">[/joint_states]</rosparam>
+    </node>
+  
+  </group>
+
+
+  <group ns='robot2'>
+
+    <include file="$(find movo_7dof_moveit_config)/launch/move_group.launch">
+      <arg name="debug" default="$(arg debug)" />
+    </include>
+
+     <param name="robot_description" command="$(find xacro)/xacro.py $(find movo_description)/urdf/movo.urdf.xacro" />
+        
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <rosparam name="robot_description" value='robot_description' />
+        <param name="use_gui" value="false"/> 
+        <rosparam param="source_list">[/joint_states]</rosparam>
+    </node>
+  </group>
+-->
+
+  <!-- If database loading was enabled, start mongodb as well -->
+  <include file="$(find movo_7dof_moveit_config)/launch/default_warehouse_db.launch" if="$(arg demo)"/>
+  
+</launch>

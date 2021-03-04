@@ -1,0 +1,339 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="task" /><meta name="DC.Title" content="Installing Kinova arms on MOVO" /><meta name="abstract" content="This section describes the process of installing Kinova arms on MOVO. This applies whether you are putting the arms on for the first time, or if you are putting the arms back on after removing them." /><meta name="description" content="This section describes the process of installing Kinova arms on MOVO. This applies whether you are putting the arms on for the first time, or if you are putting the arms back on after removing them." /><meta name="DC.Relation" scheme="URI" content="../Concepts/c_working_jaco_arms_movo.html" /><meta name="DC.Relation" scheme="URI" content="../Tasks/t_disconnect_jaco_standard_base.html" /><meta name="DC.Relation" scheme="URI" content="../Tasks/t_kinova_arms_uninstall.html" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="task_pfy_zsh_qbb" /><meta name="DC.Language" content="en" /><title>Installing Kinova arms on MOVO</title><!--  Generated with Oxygen version 19.1, build number 2017092911.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="task_pfy_zsh_qbb-d58e292" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2017092911" />
+          
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017092911" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../oxygen-webhelp/resources/js/jquery-ui.min.css" />
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/p-side-notes.css?buildId=2017092911" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/css/wt_default.css?buildId=2017092911" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/css/wt_expand.css?buildId=2017092911" />
+        
+
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/localization/strings.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/localization.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/parseuri.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.min.js"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        
+        <!-- Top Menu and Side TOC components resources -->
+        <link type="text/css" href="../oxygen-webhelp/nav-links/nav-links.css" rel="stylesheet" />
+        <link type="text/css" href="../oxygen-webhelp/nav-links/tooltip.css" rel="stylesheet" />
+        <script data-main="../oxygen-webhelp/nav-links/nav-links-init.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/variants/tree/oxygen/skin.css?buildId=2017092911" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    </head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" id="task_pfy_zsh_qbb">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../index.html" class=" wh_logo hidden-xs "><img src="../KINOVA-logo-white.png" alt="MOVO User Guide" /></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">MOVO User Guide</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="concept_dxy_ljx_4bb-d58e11" data-state="not-ready" class=" topicref "><span class="title"><a href="../Concepts/c_welcome_to_movo_beta.html" data-id="concept_dxy_ljx_4bb">Welcome to MOVO Beta</a></span></span></li>
+   <li class="has-children"><span data-tocid="concept_f2r_tlx_4bb-d58e89" data-state="not-ready" class=" topicref "><span class="title"><a href="../Concepts/c_movo_safety.html" data-id="concept_f2r_tlx_4bb">Personal safety and security of MOVO</a></span></span></li>
+   <li class="has-children"><span data-tocid="concept_dg2_nkm_sbb-d58e156" data-state="not-ready" class=" topicref "><span class="title"><a href="../Concepts/c_movo_hardware_overview.html" data-id="concept_dg2_nkm_sbb">MOVO hardware overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="task_olt_kc3_tbb-d58e212" data-state="not-ready" class=" topicref "><span class="title"><a href="../Tasks/t_powering_up_movo.html" data-id="task_olt_kc3_tbb">Powering up MOVO</a></span></span></li>
+   <li class="has-children"><span data-tocid="task_m4q_nth_qbb-d58e247" data-state="not-ready" class=" topicref "><span class="title"><a href="../Tasks/t_powering_down_movo.html" data-id="task_m4q_nth_qbb">Powering down MOVO</a></span></span></li>
+   <li class="has-children"><span data-tocid="concept_jfr_xhc_gcb-d58e270" data-state="not-ready" class=" topicref "><span class="title"><a href="../Concepts/c_working_jaco_arms_movo.html" data-id="concept_jfr_xhc_gcb">Working with JACO arms and MOVO</a></span></span></li>
+   <li><span data-tocid="task_ojm_35h_qbb-d58e326" data-state="leaf" class=" topicref "><span class="title"><a href="../Tasks/t_packing_movo_transport.html" data-id="task_ojm_35h_qbb">Packing up MOVO for transport</a></span></span></li>
+</ul></div>
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="../Concepts/c_working_jaco_arms_movo.html">Working with JACO arms and MOVO</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes how to perform procedures relating to removing and installing
+                  JACO2 arms from and on MOVO.
+               </p></span></span></span></li>
+   <li class="active"><span class="topicref"><span class="title"><a href="../Tasks/t_kinova_arms_install.html">Installing Kinova arms on MOVO</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the process of installing Kinova arms on MOVO. This applies
+                  whether you are putting the arms on for the first time, or if you are putting the
+                  arms back         on after removing them.
+               </p></span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../Tasks/t_disconnect_jaco_standard_base.html" title="Disconnect JACO arm from standard controller base"></a></span>  
+<span class="navnext"><a class="link" href="../Tasks/t_kinova_arms_uninstall.html" title="Removing Kinova arms from MOVO"></a></span>  </span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                        <button class="wh_hide_highlight" title="Show/Hide the search highlights"></button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Installing Kinova arms on MOVO</h1>
+
+    
+    <div class="body taskbody"><p class="shortdesc">This section describes the process of installing Kinova arms on MOVO. This applies
+        whether you are putting the arms on for the first time, or if you are putting the arms back
+        on after removing them.</p>
+
+        <div class="section prereq p" id="task_pfy_zsh_qbb__prereq_onh_vbl_wbb"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Before you begin</h2></div>
+            <div class="p">
+                <ul class="ul" id="task_pfy_zsh_qbb__ul_ynp_lmw_2cb">
+                    <li class="li">MOVO must be powered down.</li>
+
+                    <li class="li">You will need to have removed the upper front skin panel from MOVO. You need
+                        this to be removed to get access to the location of the mounting base. This
+                        skin panel is clipped on at the top; you don't need tools to remove it.</li>
+
+                    <li class="li">The mounting base used must have been removed from MOVO. You need this off
+                        MOVO to be able to attach all the screws to connect the arm to the
+                        base.</li>
+
+                    <li class="li">If the arm was previously mounted on a standard JACO controller base, you
+                        will need to have disconnected the arm at the first actuator from the
+                        base.</li>
+
+                    <li class="li">You will need a 2.5 mm hex key and a 5 mm hex key.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <section class="section context" id="task_pfy_zsh_qbb__context_ryj_cxk_wbb"><div class="tasklabel"><h2 class="sectiontitle tasklabel">About this task</h2></div>This procedure is used to connect (or re-connect) the arms
+            to MOVO. This procedure will describe how to attach one arm. The procedure to attach a
+            second arm is identical.<div class="note note"><span class="notetitle">Note:</span> You should try to minimize the frequency of taking off and
+                putting on the arms. The flex cable linking the arm to the base is somewhat delicate
+                and is only designed for a limited number of connections and disconnections. This is
+                one reason we provide spare flex cables with our JACO arms</div>
+</section>
+
+        <div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="ol steps" id="task_pfy_zsh_qbb__steps_kfw_gxk_wbb"><li class="li step stepexpand">
+                <span class="ph cmd">Bring the arm close to its corresponding mounting base and re-connect the end
+                    of the flex cable sticking out of the base to the flex cable connector on the
+                    first actuator of the arm. Push down the tabs on the side of the flex cable
+                    connector to lock the cable in place.</span>
+                <div class="itemgroup info">
+                    <div class="note note"><span class="notetitle">Note:</span> Make sure to connect the flex cable to the arm in the right orientation.
+                        Looking at the top of the actuator from above, the metallic side of the flex
+                        cable should be facing up rather than the blue side.</div>
+
+                </div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Carefully bring the arm together with the base, being careful not to pinch the
+                    flex cable. Also, try your best not to twist the flex cable. </span>
+                <div class="itemgroup info">
+                    <div class="note note"><span class="notetitle">Note:</span> Make sure to line up the dowel pin in the base housing with the slot on
+                        the outside of the first actuator.</div>
+
+                </div>
+                <div class="itemgroup info"><img class="image" id="task_pfy_zsh_qbb__image_l5c_2nw_2cb" src="../Graphics/arm_and_base.svg" width="600" /></div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Re-insert and tighten the screws using a 2.5 mm hex key to connect the base to
+                    the actuator.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Slide the dummy base, with the arm attached, onto the mounting position on
+                    MOVO. Make sure to attach the correct arm on the correct side.</span>
+                <div class="itemgroup info">
+                    <div class="note note"><span class="notetitle">Note:</span> Ensure that the base is the right side up. The power/controls connector
+                        port on the outside of the base must be facing upwards.</div>
+
+                </div>
+                <div class="itemgroup info"><img class="image" id="task_pfy_zsh_qbb__image_nvj_hnw_2cb" src="../Graphics/arm_base_disconnect.svg" width="600" /></div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Re-insert the screw on the top of the base to attach the base to MOVO. Tighten
+                    with a 5 mm hex key.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Plug in the connector to restore power and control connection between MOVO and
+                    the arm.</span>
+            </li>
+</ol>
+
+        <section class="section result" id="task_pfy_zsh_qbb__result_v2r_plc_fcb"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Results</h2></div>After completing this procedure, the arm will be mounted on
+            MOVO and connected for power and controls. </section>
+
+        <section class="section postreq" id="task_pfy_zsh_qbb__postreq_zbw_xgl_wbb"><div class="tasklabel"><h2 class="sectiontitle tasklabel">What to do next</h2></div>
+            <ul class="ul" id="task_pfy_zsh_qbb__ul_elq_bjd_fcb">
+                <li class="li">Repeat for the other arm as needed.</li>
+
+                <li class="li">For MOVO's left arm, rotate the arm 180 degrees around the first actuator. When
+                    you are done, the output sides of the second actuator (shoulder) for both arms
+                    should face inwards. (The two arms will make a mirror image)<div class="note note"><span class="notetitle">Note:</span> You have to do
+                        this before starting up, or it will not work properly on
+                    startup.</div>
+</li>
+
+                <li class="li">Reattach the previously removed upper front skin panel. </li>
+
+                <li class="li">Position the arms in front of MOVO so that they hang straight down and are not
+                    intertwined. This will prevent the arms from colliding when moving to the home
+                    position on start-up. </li>
+
+            </ul>
+
+        </section>
+
+    </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar hidden-print" id="wh_side_toc">
+                        <div class=" wh_side_toc " data-tooltip-position="left"><ul>
+   <li><span data-tocid="concept_dxy_ljx_4bb-d58e11" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../Concepts/c_welcome_to_movo_beta.html">Welcome to MOVO Beta</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Welcome to MOVO! Read this section first to get started.</p></span></span></span></li>
+   <li><span data-tocid="concept_f2r_tlx_4bb-d58e89" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../Concepts/c_movo_safety.html">Personal safety and security of MOVO</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section covers key information and principles to follow to avoid personal injury
+                  or damage to MOVO.
+               </p></span></span></span></li>
+   <li><span data-tocid="concept_dg2_nkm_sbb-d58e156" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../Concepts/c_movo_hardware_overview.html">MOVO hardware overview</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section provides a quick description of the basic components of MOVO</p></span></span></span></li>
+   <li><span data-tocid="task_olt_kc3_tbb-d58e212" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_powering_up_movo.html">Powering up MOVO</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the procedure for powering up MOVO. This is carried out every
+                  time you turn MOVO on.
+               </p></span></span></span></li>
+   <li><span data-tocid="task_m4q_nth_qbb-d58e247" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_powering_down_movo.html">Powering down MOVO</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the procedure for an orderly shut down of MOVO. This is used
+                  whenever it is necessary to shut down and put away MOVO when not in use.
+               </p></span></span></span></li>
+   <li><span data-tocid="concept_jfr_xhc_gcb-d58e270" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../Concepts/c_working_jaco_arms_movo.html">Working with JACO arms and MOVO</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes how to perform procedures relating to removing and installing
+                  JACO2 arms from and on MOVO.
+               </p></span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="task_llq_1cc_gcb-d58e281" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_disconnect_jaco_standard_base.html">Disconnect JACO arm from standard controller base</a><span class="wh-tooltip">
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This page describes how to disconnect a JACO arm from a standard JACO controller 
+                        base. This is necessary to prepare an arm to be mounted on MOVO.
+                     </p></span></span></span></li>
+         <li class="active"><span data-tocid="task_pfy_zsh_qbb-d58e292" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_kinova_arms_install.html">Installing Kinova arms on MOVO</a><span class="wh-tooltip">
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the process of installing Kinova arms on MOVO. This applies
+                        whether you are putting the arms on for the first time, or if you are putting the
+                        arms back         on after removing them.
+                     </p></span></span></span></li>
+         <li><span data-tocid="task_ow1_wth_qbb-d58e303" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_kinova_arms_uninstall.html">Removing Kinova arms from MOVO</a><span class="wh-tooltip">
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the procedure for removing one Kinova arm from MOVO. This can
+                        be helpful if you want to experiment with the arm separately for research        
+                        purposes.
+                     </p></span></span></span></li>
+         <li><span data-tocid="task_hhz_pws_5bb-d58e314" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_mount_jaco_externally_base.html">Mounting JACO arm on standard controller base</a><span class="wh-tooltip">
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This page describes how to mount a JACO arm on a standard JACO controller        
+                        base.
+                     </p></span></span></span></li>
+      </ul>
+   </li>
+   <li><span data-tocid="task_ojm_35h_qbb-d58e326" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../Tasks/t_packing_movo_transport.html">Packing up MOVO for transport</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the procedure for packing up MOVO into its shipping container.
+                  This is useful if you ever need to ship or transport MOVO.
+               </p></span></span></span></li>
+</ul></div>
+                    </nav>
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank"> &lt;oXygen/&gt; XML WebHelp </a>
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <script src="../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../oxygen-webhelp/template/resources/js/wt_default.js?buildId=2017092911" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../oxygen-webhelp/template/resources/js/wt_expand.js?buildId=2017092911" type="text/javascript"></script>
+        
+        
+        <!-- Search autocomplete -->
+        <script type="text/javascript" src="../oxygen-webhelp/search/keywords.js?uniqueId=20180308023502"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/search/searchAutocomplete.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/search/searchHistoryItems.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/search/searchOptions.js?uniqueId=20180308023502"><!----></script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+image: /home/movo/movo_ws/src/movo_common/movo_navigation/movo_navigation_apps/maps/mymap4.pgm
+resolution: 0.050000
+origin: [-37.200000, -51.600000, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

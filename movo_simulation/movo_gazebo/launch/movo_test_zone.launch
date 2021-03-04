@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <env name="GAZEBO_MODEL_PATH" value="$(find movo_gazebo)/models:$(optenv GAZEBO_MODEL_PATH)" />
+    
+    <include file="$(find movo_gazebo)/launch/movo.launch">
+        <!-- <arg name="world" value="$(find movo_gazebo)/worlds/test_zone.sdf"/> -->
+        <arg name="world" default="worlds/empty.world"/>
+        <arg name="limited" default="false"/>
+        <arg name="paused" default="true"/>
+        <arg name="gui" default="true"/>
+    </include>
+
+    <include file="$(find ft_sensor)/launch/ft.launch">
+    </include>
+
+    
+
+
+</launch>

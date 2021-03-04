@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+ <launch>
+
+    <node name="gazebo_transport_to_ros_topic" pkg="ft_sensor" type="ft_sensor_gazebo_transport_to_ros_topic" output="screen">
+	</node>
+	
+    <!-- <node name="lx_cartesianforce" pkg="movo_gazebo" type="cartesianforce.py"> -->
+    <!-- </node> -->
+    
+</launch>

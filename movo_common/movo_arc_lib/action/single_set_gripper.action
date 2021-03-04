@@ -1,0 +1,9 @@
+#goal definition
+float32 value
+char arm
+---
+#result definition
+bool success
+---
+#feedback
+bool NotImplemented

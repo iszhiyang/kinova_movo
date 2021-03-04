@@ -1,0 +1,193 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" lang="en" dir="ltr">
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="wh-path2root" content="" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+        <script>
+            /**
+             * If an old URL is given, redirect to the corresponding topic from the WebHelp Responsive
+             */
+            var actualLocation = window.location.href;
+            var newLocation;
+            if (actualLocation.indexOf('/#')!=-1) {
+                newLocation = actualLocation.replace(/\/#/g, "/");
+                window.location.replace(newLocation);
+            }
+            if (actualLocation.match(/\/index\.(.*)#/gi)!=null) {
+                newLocation = actualLocation.replace(/\/index\.(.*)#/gi, "/");
+                window.location.replace(newLocation);
+            }
+            
+            function debug(msg, object){
+                console.log(msg, object);
+            }
+            function executeQuery(){
+                $('#searchForm').submit();
+                return true;
+            }
+        </script>
+        
+	    <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017092911" />
+        
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+        
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+        
+        <link rel="stylesheet" href="oxygen-webhelp/resources/js/jquery-ui.min.css" />
+        
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/p-side-notes.css?buildId=2017092911" />
+        
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_default.css?buildId=2017092911" />
+
+        
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/localization/strings.js?buildId=2017092911"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/localization.js?buildId=2017092911"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/parseuri.js?buildId=2017092911"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"></script>
+        
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.min.js"><!----></script>
+        
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"></script>
+        
+        <!-- Top Menu and Side TOC components resources -->
+        <link type="text/css" href="oxygen-webhelp/nav-links/nav-links.css" rel="stylesheet" />
+        <script data-main="oxygen-webhelp/nav-links/nav-links-init.js" src="oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/variants/tree/oxygen/skin.css?buildId=2017092911" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <title>MOVO User Guide</title></head>
+    <body class="wh_main_page">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="KINOVA-logo-white.png" alt="MOVO User Guide" /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span xmlns="" class="title">MOVO User Guide</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="concept_dxy_ljx_4bb-d58e11" data-state="not-ready" class=" topicref "><span class="title"><a href="Concepts/c_welcome_to_movo_beta.html" data-id="concept_dxy_ljx_4bb">Welcome to MOVO Beta</a></span></span></li>
+   <li class="has-children"><span data-tocid="concept_f2r_tlx_4bb-d58e89" data-state="not-ready" class=" topicref "><span class="title"><a href="Concepts/c_movo_safety.html" data-id="concept_f2r_tlx_4bb">Personal safety and security of MOVO</a></span></span></li>
+   <li class="has-children"><span data-tocid="concept_dg2_nkm_sbb-d58e156" data-state="not-ready" class=" topicref "><span class="title"><a href="Concepts/c_movo_hardware_overview.html" data-id="concept_dg2_nkm_sbb">MOVO hardware overview</a></span></span></li>
+   <li class="has-children"><span data-tocid="task_olt_kc3_tbb-d58e212" data-state="not-ready" class=" topicref "><span class="title"><a href="Tasks/t_powering_up_movo.html" data-id="task_olt_kc3_tbb">Powering up MOVO</a></span></span></li>
+   <li class="has-children"><span data-tocid="task_m4q_nth_qbb-d58e247" data-state="not-ready" class=" topicref "><span class="title"><a href="Tasks/t_powering_down_movo.html" data-id="task_m4q_nth_qbb">Powering down MOVO</a></span></span></li>
+   <li class="has-children"><span data-tocid="concept_jfr_xhc_gcb-d58e270" data-state="not-ready" class=" topicref "><span class="title"><a href="Concepts/c_working_jaco_arms_movo.html" data-id="concept_jfr_xhc_gcb">Working with JACO arms and MOVO</a></span></span></li>
+   <li><span data-tocid="task_ojm_35h_qbb-d58e326" data-state="leaf" class=" topicref "><span class="title"><a href="Tasks/t_packing_movo_transport.html" data-id="task_ojm_35h_qbb">Packing up MOVO for transport</a></span></span></li>
+</ul></div>
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_main_page_search " role="form">
+          
+          <div class="wh_welcome"></div>          
+          <form id="searchForm" method="get" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form>
+          
+        </div>
+        <div class="wh_content_area ">
+            
+            <!-- This is the placeholder for the main page tiles. -->
+            <div class="container wh_content_flex_container">
+                <!-- This is the placeholder for the main page tiles. -->
+                
+                <!--
+                    This is the placeholder for the main page entries
+                    presented in a tree-like fashion.
+                -->
+                <div class=" wh_main_page_toc "><div class=" wh_main_page_toc_accordion_header "><span class="topicref"><a href="Concepts/c_welcome_to_movo_beta.html" data-id="concept_dxy_ljx_4bb">Welcome to MOVO Beta</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_welcome_to_movo_beta.html" data-id="concept_dxy_ljx_4bb">Welcome to MOVO! Read this section first to get started.
+</div></div><div class=" wh_main_page_toc_accordion_entries "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_movo_user_guide_revision_history.html" data-id="concept_dmq_21n_gcb">Revision History</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_movo_user_guide_revision_history.html" data-id="concept_dmq_21n_gcb">This page describes the history of revisions of the document.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_whats_in_box.html" data-id="concept_jgg_cqh_qbb">What's in the box?</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_whats_in_box.html" data-id="concept_jgg_cqh_qbb">This section describes the contents of the box in which MOVO arrives.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_unboxing_movo.html" data-id="task_lqc_nqh_qbb">Unboxing MOVO</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_unboxing_movo.html" data-id="task_lqc_nqh_qbb">This section gives a description of the process for removing MOVO from the shipping         container.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_main_breaker.html" data-id="concept_cz2_jkd_fcb">Battery breaker switch </a></span><div class=" wh_toc_shortdesc " href="Concepts/c_main_breaker.html" data-id="concept_cz2_jkd_fcb">This section describes how to flip the battery breaker on the base. This is required         in order for the batteries to be charged, and for MOVO to operate without being plugged         in.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_charging_movo_battery.html" data-id="task_npl_gth_qbb">Charging MOVO's battery</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_charging_movo_battery.html" data-id="task_npl_gth_qbb">This section describes the procedure to charge MOVO's battery. MOVO's batteries need         to be charged regularly.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_support_help.html" data-id="concept_ncf_m5h_qbb">Support / help</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_support_help.html" data-id="concept_ncf_m5h_qbb">Here's where to turn for MOVO-related support and advice.
+</div></div></div><div class=" wh_main_page_toc_accordion_header "><span class="topicref"><a href="Concepts/c_movo_safety.html" data-id="concept_f2r_tlx_4bb">Personal safety and security of MOVO</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_movo_safety.html" data-id="concept_f2r_tlx_4bb">This section covers key information and principles to follow to avoid personal injury         or damage to MOVO.
+</div></div><div class=" wh_main_page_toc_accordion_entries "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_intended_use.html" data-id="concept_ert_mqx_4bb">Intended use</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_intended_use.html" data-id="concept_ert_mqx_4bb">This section describes the intended usage of MOVO.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_environmental_operating_conditions.html" data-id="concept_yxt_vqx_4bb">Environmental and operating conditions</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_environmental_operating_conditions.html" data-id="concept_yxt_vqx_4bb">This section describes the proper environmental operating conditions for MOVO. Make         sure not to use MOVO outside the proper range of conditions.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_estop.html" data-id="concept_ktb_q5h_qbb">E-Stop</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_estop.html" data-id="concept_ktb_q5h_qbb">This section describes the use of the E-Stop. The E-Stop lets you stop MOVO quickly         in an emergency.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_avoiding_damage_equipment.html" data-id="concept_vkq_brx_4bb">Avoiding damage to MOVO</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_avoiding_damage_equipment.html" data-id="concept_vkq_brx_4bb">This section describes steps to take to avoid potential damage to MOVO. Most of this         is common sense, but it's good to keep in mind.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_avoiding_personal_injury.html" data-id="concept_itc_2rx_4bb">Avoiding personal injury</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_avoiding_personal_injury.html" data-id="concept_itc_2rx_4bb">This section describes some basic steps to take to avoid potential injury to         researchers and bystanders when operating MOVO.
+</div></div></div><div class=" wh_main_page_toc_accordion_header "><span class="topicref"><a href="Concepts/c_movo_hardware_overview.html" data-id="concept_dg2_nkm_sbb">MOVO hardware overview</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_movo_hardware_overview.html" data-id="concept_dg2_nkm_sbb">This section provides a quick description of the basic components of MOVO
+</div></div><div class=" wh_main_page_toc_accordion_entries "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_hmi_panel.html" data-id="concept_xhp_fw2_tbb">MOVO Human-Machine Interface (HMI) panel</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_hmi_panel.html" data-id="concept_xhp_fw2_tbb">This section describes the Human-Machine Interface (HMI) panel, located on the rear         of the upper torso. 
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_charging_port.html" data-id="untitled8">MOVO charging port</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_charging_port.html" data-id="untitled8">This section describes the charging port used to connect MOVO to its power supply and         the indicators that display the charging state.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_led_panel.html" data-id="untitled7">LED panel</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_led_panel.html" data-id="untitled7">This section describes the LED status indicators on the right hand side of the motion         base of MOVO.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_teleop_control.html" data-id="concept_wgy_m44_ccb">Joystick control </a></span><div class=" wh_toc_shortdesc " href="Concepts/c_teleop_control.html" data-id="concept_wgy_m44_ccb">This section describes the joystick used for remote tele-operation of MOVO and the         control mapping for the joystick.
+</div></div></div><div class=" wh_main_page_toc_accordion_header "><span class="topicref"><a href="Tasks/t_powering_up_movo.html" data-id="task_olt_kc3_tbb">Powering up MOVO</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_powering_up_movo.html" data-id="task_olt_kc3_tbb">This section describes the procedure for powering up MOVO. This is carried out every         time you turn MOVO on.
+</div></div><div class=" wh_main_page_toc_accordion_entries "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_movo_bootup_process.html" data-id="concept_mp3_xcf_bcb">MOVO boot-up process</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_movo_bootup_process.html" data-id="concept_mp3_xcf_bcb">This section describes the internal bootup process that takes place when MOVO is         powered on.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_movo_upstart_process.html" data-id="concept_apg_cjf_bcb">Upstart process</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_movo_upstart_process.html" data-id="concept_apg_cjf_bcb">This section describes the upstart process that is launched by the boot-up process on         powering up MOVO.
+</div></div></div><div class=" wh_main_page_toc_accordion_header "><span class="topicref"><a href="Tasks/t_powering_down_movo.html" data-id="task_m4q_nth_qbb">Powering down MOVO</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_powering_down_movo.html" data-id="task_m4q_nth_qbb">This section describes the procedure for an orderly shut down of MOVO. This is used         whenever it is necessary to shut down and put away MOVO when not in use.
+</div></div><div class=" wh_main_page_toc_accordion_entries "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Concepts/c_movo_shutdown_process.html" data-id="concept_xtf_tx1_ccb">MOVO shutdown process</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_movo_shutdown_process.html" data-id="concept_xtf_tx1_ccb">Describes the internal process when MOVO is shut down.
+</div></div></div><div class=" wh_main_page_toc_accordion_header "><span class="topicref"><a href="Concepts/c_working_jaco_arms_movo.html" data-id="concept_jfr_xhc_gcb">Working with JACO arms and MOVO</a></span><div class=" wh_toc_shortdesc " href="Concepts/c_working_jaco_arms_movo.html" data-id="concept_jfr_xhc_gcb">This section describes how to perform procedures relating to removing and installing         JACO2 arms from and on MOVO.
+</div></div><div class=" wh_main_page_toc_accordion_entries "><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_disconnect_jaco_standard_base.html" data-id="task_llq_1cc_gcb">Disconnect JACO arm from standard controller base</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_disconnect_jaco_standard_base.html" data-id="task_llq_1cc_gcb">This page describes how to disconnect a JACO arm from a standard JACO controller         base. This is necessary to prepare an arm to be mounted on MOVO.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_kinova_arms_install.html" data-id="task_pfy_zsh_qbb">Installing Kinova arms on MOVO</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_kinova_arms_install.html" data-id="task_pfy_zsh_qbb">This section describes the process of installing Kinova arms on MOVO. This applies         whether you are putting the arms on for the first time, or if you are putting the arms back         on after removing them.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_kinova_arms_uninstall.html" data-id="task_ow1_wth_qbb">Removing Kinova arms from MOVO</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_kinova_arms_uninstall.html" data-id="task_ow1_wth_qbb">This section describes the procedure for removing one Kinova arm from MOVO. This can         be helpful if you want to experiment with the arm separately for research         purposes.
+</div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_mount_jaco_externally_base.html" data-id="task_hhz_pws_5bb">Mounting JACO arm on standard controller base</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_mount_jaco_externally_base.html" data-id="task_hhz_pws_5bb">This page describes how to mount a JACO arm on a standard JACO controller         base.
+</div></div></div><div class=" wh_main_page_toc_entry "><span class="topicref"><a href="Tasks/t_packing_movo_transport.html" data-id="task_ojm_35h_qbb">Packing up MOVO for transport</a></span><div class=" wh_toc_shortdesc " href="Tasks/t_packing_movo_transport.html" data-id="task_ojm_35h_qbb">This section describes the procedure for packing up MOVO into its shipping container.         This is useful if you ever need to ship or transport MOVO.
+</div></div></div>
+                
+            </div>
+        </div>
+        <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank"> &lt;oXygen/&gt; XML WebHelp </a>
+  </div>
+</nav>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/template/resources/js/wt_default.js?buildId=2017092911" type="text/javascript"></script>
+        
+        
+        
+        <!-- Search autocomplete -->
+        <script type="text/javascript" src="oxygen-webhelp/search/keywords.js?uniqueId=20180308023502"><!----></script>        
+        <script type="text/javascript" src="oxygen-webhelp/search/searchAutocomplete.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/search/searchHistoryItems.js?buildId=2017092911"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/search/searchOptions.js?uniqueId=20180308023502"><!----></script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+#goal definition
+float32[7] jp_right_relate
+float32[7] jp_left_relate
+float32 duration
+float32[6] r_max_force
+float32[6] l_max_force
+---
+#result definition
+bool success
+---
+#feedback
+bool NotImplemented

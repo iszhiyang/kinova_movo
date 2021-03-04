@@ -1,0 +1,27 @@
+<launch>
+  
+  <!--include file="$(find movo_7dof_moveit_config)/launch/movo_moveit_planning_execution.launch">
+    
+  </include-->
+   <!-- By default, we are not in debug mode -->
+  <arg name="debug" default="false" />
+
+  <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
+  <include file="$(find movo_7dof_moveit_config)/launch/planning_context.launch">
+    <arg name="load_robot_description" value="true"/>
+  </include>  
+
+  <!-- Run Rviz and load the default config to see the state of the move_group node -->
+  <include file="$(find movo_7dof_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="config" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  <node name="movo_moveit_test" pkg="si_utils" type="movo_moveit_test.py" 
+        respawn="false" output="screen">
+     <param name="~sim" value="False"/>
+  
+  </node>
+
+  <!--node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 1 left_ee_link link1 100" /-->
+</launch>

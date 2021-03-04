@@ -1,0 +1,20 @@
+#goal definition
+float32[7] jp_right
+float32[7] jp_left
+float32 jp_linear
+float32[2] jp_head
+float32 duration
+float32[6] r_max_force
+float32[6] l_max_force
+---
+#result definition
+bool success
+---
+#feedback
+float32[7] jp_right
+float32[7] jp_left
+float32 jp_linear
+float32[2] jp_head
+float32 duration
+float32[6] r_current_force
+float32[6] l_current_force

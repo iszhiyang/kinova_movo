@@ -10,8 +10,7 @@ It is intended to be used with a remote PC that has ubuntu 16.04 LTS cleanly ins
 ```
 sudo apt-get install git
 mkdir ~/movo_ws && cd movo_ws
-git clone https://github.com/ARC-cobot/kinova_movo.git src/
-cd src && git checkout zhiyang
+git clone https://github.com/ALAN-NUS/kinova_movo.git src/
 cd ~/movo_ws/src/movo_pc_setup 
 chmod +x setup_remote_pc
 ./setup_remote_pc
